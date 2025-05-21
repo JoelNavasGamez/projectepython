@@ -68,7 +68,7 @@ def iniciar_juego():
             if player_rect.colliderect(enemy):
                 print("💥 Has muerto. Reiniciando juego... 💥")
                 pygame.time.delay(1000)
-                iniciar_juego()  # Reinicio del juego
+                iniciar_juego()  
 
             pygame.draw.rect(screen, RED, enemy)
 
@@ -82,5 +82,5 @@ def iniciar_juego():
         pygame.display.flip()
         clock.tick(30)
 
-# Iniciar la primera vez
+
 iniciar_juego()
