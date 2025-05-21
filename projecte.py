@@ -21,7 +21,7 @@ def iniciar_juego():
     player_size = 50
     player_x = WIDTH // 2
     player_y = HEIGHT - player_size - 10
-    player_speed = 7
+    player_speed = 10
 
    
     enemy_size = 50
@@ -66,7 +66,7 @@ def iniciar_juego():
                 score += 1
 
             if player_rect.colliderect(enemy):
-                print("💥 Has muerto. Reiniciando juego... 💥")
+                print("Has muerto. Reiniciando juego.")
                 pygame.time.delay(1000)
                 iniciar_juego()  
 
